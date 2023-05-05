@@ -18,7 +18,6 @@ public class Main {
             a[i] = scanner.nextInt();
             if (a[i] == k) {
                 check = true;
-                break;
             }
         }
         if (check) {
@@ -32,8 +31,6 @@ public class Main {
         } else {
             System.out.println("K khong co trong mang ");
         }
-        for (int b : a) {
-            System.out.println(b);
-        }
+        for (int index = 0; index < n; index++) { System.out.println(a[index]);}
     }
 }
