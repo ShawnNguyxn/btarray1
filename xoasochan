@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Nhap do dai mang N= ");
+        int n = scanner.nextInt();
+        int[] a = new int[n];
+        int i, b;
+        System.out.println("Nhap cac gia tri trong mang ");
+        for (i = 0; i < n; i++) {
+            a[i] = scanner.nextInt();
+        }
+        for (b=i=0; i<n; i++) {
+            if (a[i] % 2 != 0) {
+                a[b] = a[i];
+                b++;
+            }
+        }
+        n=b;
+        for (int c =0; c<n; c++){
+            System.out.println(a[c]);
+            }
+        }
+    }
