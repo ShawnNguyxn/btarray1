@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Nhap do dai mang N= ");
+        int n = scanner.nextInt();
+        int []a = new int[n];
+
+        System.out.println("Nhap cac gia tri trong mang ");
+        int i ,max=0, runnerup=0, tong;
+        for (i=0; i<n; i++){
+            a[i]= scanner.nextInt();
+        }
+        for (int temp:a) {
+            if (max < temp){
+                max = temp;
+            }
+            if (max > temp && runnerup < temp){
+                runnerup = temp;
+            }
+        }
+        System.out.println("So lon nhat trong mang la "+max);
+        System.out.println("So lon nhi trong mang la "+runnerup);
+    }
+}
